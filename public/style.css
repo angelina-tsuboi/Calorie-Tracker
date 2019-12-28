@@ -1,0 +1,47 @@
+nav{
+    width: 95%;
+    margin:auto;
+    margin-top:3vh;
+}
+
+body{
+    background-image: url('/background.jpg');
+    background-size: cover;
+}
+
+
+.row{
+    background-color: white;
+    opacity: 0.8;
+}
+
+td{
+    padding-bottom: 1em;
+}
+
+table{
+    width: 95%;
+    margin:auto;
+    border-radius: none;
+    margin-top: 5vh; 
+}
+
+#name{
+    background-color: #3CAAC2;
+}
+
+#calories{
+    background-color: #E070EA;
+}
+
+#carbs{
+    background-color: #EAB270;
+}
+
+#fats{
+    background-color: #AEDF46;
+}
+
+#protein{
+    background-color: #7852E7;
+}
