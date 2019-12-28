@@ -28,16 +28,22 @@ function search(){
   } 
 
 function update(data){
-    alert(data.calories)
-    $('#tableBody').append(`
-    <tr class="row">
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
-            <td>$7.00</td>
-            <td>$7.00</td>
-          </tr>
-    `)
-}
+    try{
+        $('#tableBody').append(`
+        <tr class="row">
+                <td>${searchWord}</td>
+                <td>${data.calories}</td>
+                <td>${data.totalNutrients.CHOCDF.quantity.toFixed(2)}g</td>
+                <td>${data.totalNutrients.FAT.quantity.toFixed(2)}g</td>
+                <td>${data.totalNutrients.PROCNT.quantity.toFixed(2)}g</td>
+              </tr>
+        `)
+    } catch{
+        alert("Invalid Input")
+    }
+        
+    } 
+   
+
 
 
